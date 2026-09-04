@@ -16,6 +16,17 @@ Bieb: Training-Programming: Word guesser 0 and 1.
 Bieb: Introductions-Programming: practice-string-methods-list-methods-dict-methods.
 
 
+#### sorting
+Bieb: Training-Programming: Sorting.
+
+* Bubble sort
+* Selection sort
+* Quick sort using various partioning methods
+    * Naive partioning
+    * Lomuto partioning
+    * Hoare's partioning
+
+
 #### tictactoe
 Edube: PE1, 4.7.2.1 Tic-Tac-Toe.
 
