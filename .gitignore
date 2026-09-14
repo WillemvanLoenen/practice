@@ -1,1 +1,4 @@
 hangman/highscores.txt
+scratch/
+minesweeper/highscores.json
+minesweeper/__pycache__/

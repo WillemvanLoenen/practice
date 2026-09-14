@@ -3,17 +3,16 @@ This repository contains various scripts made while practicing with python.
 
 The different projects are from or inspired by ITvitae bieb resources, Python Instute learning materials on edube.org, or own ideas.
 
-
-#### argparse
-Bieb: Need to know-Python modules and tools: Practice: argparse.
+Most recent projects are listed on top.
 
 
-#### hangman
-Bieb: Training-Programming: Word guesser 0 and 1.
+#### minesweeper
+My main aim of this project was to implement the solver. The core of the game has been implemented with some help of AI.
 
+* A minesweeper game.
+* A solver to solve minesweeper games.
 
-#### phonebook
-Bieb: Introductions-Programming: practice-string-methods-list-methods-dict-methods.
+With GUI using tkinter. An excercise with Object-Oriented Programming, iterators, sets and more. 
 
 
 #### sorting
@@ -33,6 +32,18 @@ Edube: PE1, 4.7.2.1 Tic-Tac-Toe.
 Extended version using binary logic for the game state.
 
 
+#### argparse
+Bieb: Need to know-Python modules and tools: Practice: argparse.
+
+
+#### hangman
+Bieb: Training-Programming: Word guesser 0 and 1.
+
+
+#### phonebook
+Bieb: Introductions-Programming: practice-string-methods-list-methods-dict-methods.
+
+
 #### training_c
 Bieb: Introductions-Programming: Training C.
 
@@ -43,9 +54,4 @@ Bieb: Introductions-Programming: Training C.
 Bieb: Need to know-Python modules and tools: Practice: Flask.
 
 
-#### minesweeper
-* A minesweeper game.
-* A solver to solve minesweeper games.
-
-With GUI using tkinter.
 -->
