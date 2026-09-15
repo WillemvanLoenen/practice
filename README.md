@@ -6,7 +6,8 @@ The different projects are from or inspired by ITvitae bieb resources, Python In
 Most recent projects are listed on top.
 
 
-#### minesweeper
+## minesweeper
+##### Personal project
 My main aim of this project was to implement the solver. The core of the game has been implemented with some help of AI.
 
 * A minesweeper game.
@@ -15,8 +16,8 @@ My main aim of this project was to implement the solver. The core of the game ha
 With GUI using tkinter. An excercise with Object-Oriented Programming, iterators, sets and more. 
 
 
-#### sorting
-Bieb: Training-Programming: Sorting.
+## sorting
+##### Bieb: Training-Programming: Sorting
 
 * Bubble sort
 * Selection sort
@@ -26,31 +27,36 @@ Bieb: Training-Programming: Sorting.
     * Hoare's partioning
 
 
-#### tictactoe
-Edube: PE1, 4.7.2.1 Tic-Tac-Toe.
+## tictactoe
+##### Edube: PE1, 4.7.2.1 Tic-Tac-Toe
 
 Extended version using binary logic for the game state.
 
 
-#### argparse
-Bieb: Need to know-Python modules and tools: Practice: argparse.
+## argparse
+
+##### Classroom excercise
+ls.py: a simplified python implementation of the bash command ls.
+
+##### Bieb: Need to know-Python modules and tools: Practice: argparse
+convert.py
 
 
-#### hangman
-Bieb: Training-Programming: Word guesser 0 and 1.
+## hangman
+##### Bieb: Training-Programming: Word guesser 0 and 1
 
 
-#### phonebook
-Bieb: Introductions-Programming: practice-string-methods-list-methods-dict-methods.
+## phonebook
+##### Bieb: Introductions-Programming: practice-string-methods-list-methods-dict-methods
 
 
-#### training_c
-Bieb: Introductions-Programming: Training C.
+## training_c
+##### Bieb: Introductions-Programming: Training C
 
 <!--
 ## Soon
 
-#### flask
+## flask
 Bieb: Need to know-Python modules and tools: Practice: Flask.
 
 
