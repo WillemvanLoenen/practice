@@ -16,6 +16,10 @@ My main aim of this project was to implement the solver. The core of the game ha
 With GUI using tkinter. An excercise with Object-Oriented Programming, iterators, sets and more. 
 
 
+## cmd
+##### Classroom exercise using the cmd module
+
+
 ## sorting
 ##### Bieb: Training-Programming: Sorting
 
@@ -34,6 +38,7 @@ Extended version using binary logic for the game state.
 
 
 ## argparse
+##### Exercises using the argparse module
 
 ##### Classroom excercise
 ls.py: a simplified python implementation of the bash command ls.
@@ -52,6 +57,7 @@ convert.py
 
 ## training_c
 ##### Bieb: Introductions-Programming: Training C
+
 
 <!--
 ## Soon
