@@ -6,6 +6,12 @@ The different projects are from or inspired by ITvitae bieb resources, Python In
 Most recent projects are listed on top.
 
 
+## curses
+##### Classroom exercise using the curses module
+
+A snake game with multiplayer option.
+
+
 ## minesweeper
 ##### Personal project
 My main aim of this project was to implement the solver. The core of the game has been implemented with some help of AI.
@@ -18,6 +24,8 @@ With GUI using tkinter. An excercise with Object-Oriented Programming, iterators
 
 ## cmd
 ##### Classroom exercise using the cmd module
+
+A maze game.
 
 
 ## sorting
