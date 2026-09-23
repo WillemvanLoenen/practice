@@ -2,9 +2,6 @@ import curses
 import time
 import random
 
-# BUG: sometimes food does not disappear after being eaten,
-#      the bug seems more apparent at higher speeds.
-
 
 class Player:
     active_players = 0
@@ -147,7 +144,7 @@ class Player:
 
 
 def draw_game(stdscr): 
-    time_step_init = .1
+    time_step_init = .05 #.1
     time_step = time_step_init
     time_decrement = .99
 
@@ -351,7 +348,7 @@ def draw_game(stdscr):
     num_food = max(3, width * height // 500)
     food = []
     for _ in range(num_food):
-        food.append(create_food(height, width, players))
+        food.append(create_food(height, width, players, food))
 
     while True:
         stdscr.refresh()
@@ -379,7 +376,7 @@ def draw_game(stdscr):
                                 players.remove(p)
                         food = []
                         for _ in range(num_food):
-                            food.append(create_food(height, width, players))
+                            food.append(create_food(height, width, players, food))
                         time_step = time_step_init
                         break
                     elif k == menu_keys["resume"]:
@@ -486,7 +483,7 @@ def draw_game(stdscr):
             stdscr.addstr(item[1], 2*item[0], "  ")
 
 
-def create_food(height, width, players, food=()):
+def create_food(height, width, players, food):
     snakes = []
     for p in players:
         snakes.extend(p.snake)
