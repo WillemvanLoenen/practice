@@ -144,7 +144,7 @@ class Player:
 
 
 def draw_game(stdscr): 
-    time_step_init = .05 #.1
+    time_step_init = .1
     time_step = time_step_init
     time_decrement = .99
 
@@ -346,9 +346,7 @@ def draw_game(stdscr):
     players = [p for p in all_players if p.active]
 
     num_food = max(3, width * height // 500)
-    food = []
-    for _ in range(num_food):
-        food.append(create_food(height, width, players, food))
+    food = create_food(height, width, players, num_food=num_food)
 
     while True:
         stdscr.refresh()
@@ -374,9 +372,7 @@ def draw_game(stdscr):
                                 players.append(p)
                             elif not p.active and p in players:
                                 players.remove(p)
-                        food = []
-                        for _ in range(num_food):
-                            food.append(create_food(height, width, players, food))
+                        food = create_food(height, width, players, num_food=num_food)
                         time_step = time_step_init
                         break
                     elif k == menu_keys["resume"]:
@@ -423,7 +419,7 @@ def draw_game(stdscr):
 
         for p in players:
             if not p.dead and p.snake[-1] in food:
-                food.append(create_food(height, width, players, food))
+                food.extend(create_food(height, width, players, food))
                 food.remove(p.snake[-1])
                 time_step *= time_decrement ** (1 / len(players))
             else:
@@ -483,15 +479,16 @@ def draw_game(stdscr):
             stdscr.addstr(item[1], 2*item[0], "  ")
 
 
-def create_food(height, width, players, food):
-    snakes = []
+def create_food(height, width, players, food=[], num_food=1):
+    excluded = []
+    excluded.extend(food)
     for p in players:
-        snakes.extend(p.snake)
-    x, y = snakes[0]
-    while (x, y) in snakes or (x, y) in food:
-        x = random.randint(0, width-1)
-        y = random.randint(0, height-1)
-    return (x, y)
+        excluded.extend(p.snake)
+    sample_space = [
+        (x, y) for x in range(width) for y in range(height) 
+        if (x, y) not in excluded
+    ]
+    return random.sample(sample_space, num_food)   
 
 
 def opposite(k, keys):
